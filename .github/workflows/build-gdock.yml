@@ -1,9 +1,9 @@
 #=================================================
-#   Description: Build G-DOCK FROM LEAN'S LEDE
+#   Description: Newifi 3 FROM LEAN'S LEDE
 #   Author: JK
 #=================================================
 
-name: Build G-DOCK
+name: Build Newifi 3
 
 on: 
   release:
@@ -81,5 +81,5 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: G-DOCK
+        name: Newifi 3
         path: ./lede/bin
