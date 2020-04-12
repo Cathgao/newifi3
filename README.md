@@ -6,7 +6,7 @@
 
 本仓库每天UTC 20:00自动拉取源码编译，可直接在action中下载最新固件
 
-![Build G-DOCK](https://github.com/Cathgao/newifi3/workflows/Build%20G-DOCK/badge.svg?branch=master)
+![Build Newifi 3](https://github.com/Cathgao/newifi3/workflows/Build%20Newifi%203/badge.svg)
 
 固件具体更新内容移步到 https://github.com/coolsnowwolf/lede 查看
 
