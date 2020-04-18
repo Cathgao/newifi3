@@ -52,7 +52,7 @@ jobs:
     - name: Clone source code
       run: |
         git clone https://github.com/coolsnowwolf/lede lede
-       echo '开启魔法上网'
+        echo '开启魔法上网'
         cd lede
         sed -i 's/#src-git/src-git/g' feeds.conf.default
 
