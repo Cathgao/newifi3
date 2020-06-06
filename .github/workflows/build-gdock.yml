@@ -80,6 +80,7 @@ jobs:
         cd lede
         echo -e "$(nproc) thread build."
         make -j$(nproc) V=s
+        rm -rf ./bin/targets/ipq40xx/generic/packages
 
     - name : Upload artifact
       uses: actions/upload-artifact@master
