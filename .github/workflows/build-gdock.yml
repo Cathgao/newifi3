@@ -64,7 +64,7 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        cp -f gdockfull128.config ./lede/.config
+        cp -f newifi3.config ./lede/.config
         chmod +x diy.sh
         cd lede
         ../diy.sh
