@@ -33,9 +33,6 @@ git clone https://github.com/rufengsuixing/luci-app-adguardhome ../diy/luci-app-
 echo '集成diy目录'
 ln -s ../../diy ./package/openwrt-packages
 
-echo '下载AdGuard Home'
-git clone https://github.com/rufengsuixing/luci-app-adguardhome ../diy/luci-app-adguardhome
-
 #echo '首页增加CPU频率动态显示'
 #cp -f ../diy/mod-index.htm ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
