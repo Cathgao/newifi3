@@ -27,6 +27,9 @@ cp -f ../banner package/base-files/files/etc/
 echo '下载ServerChan'
 git clone https://github.com/tty228/luci-app-serverchan ../diy/luci-app-serverchan
 
+echo 'JD script'
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ../diy/luci-app-jd-dailybonus
+
 echo '下载AdGuard Home'
 git clone https://github.com/rufengsuixing/luci-app-adguardhome ../diy/luci-app-adguardhome
 
