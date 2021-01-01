@@ -1,4 +1,12 @@
 echo '修改机器名称'
+###
+ # @Descripttion: 
+ # @version: 
+ # @Author: Cath
+ # @Date: 2021-01-01 10:56:41
+ # @LastEditors: Cath
+ # @LastEditTime: 2021-01-01 10:57:14
+### 
 sed -i 's/OpenWrt/newifi3/g' package/base-files/files/bin/config_generate
 
 echo '修改网关地址'
@@ -31,7 +39,8 @@ echo 'JD script'
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ../diy/luci-app-jd-dailybonus
 
 echo '下载AdGuard Home'
-git clone https://github.com/rufengsuixing/luci-app-adguardhome ../diy/luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ../diy/luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome ../diy/luci-app-adguardhome
 
 echo '集成diy目录'
 ln -s ../../diy ./package/openwrt-packages
