@@ -19,7 +19,7 @@ CONFIG_PACKAGE_luci-app-mtwifi=n    #选中该包
 
 本仓库每天UTC 20:00自动拉取源码编译，可直接在action中下载最新固件
 
-![Build Newifi 3](https://github.com/Cathgao/newifi3/workflows/Build%20Newifi%203/badge.svg)
+[![Build Newifi 3](https://github.com/Cathgao/newifi3/actions/workflows/build-gdock.yml/badge.svg)](https://github.com/Cathgao/newifi3/actions/workflows/build-gdock.yml)
 
 固件具体更新内容移步到 https://github.com/coolsnowwolf/lede 查看
 
