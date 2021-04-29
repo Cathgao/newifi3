@@ -23,7 +23,9 @@ sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/theme
 
 echo '删除旧版argon,链接新版'
 rm -rf ./package/lean/luci-theme-argon
-ln -s ../../../luci-theme-argon ./package/lean/
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon ../diy/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config ../diy/luci-app-argon-config
+#ln -s ../../../luci-theme-argon ./package/lean/
 
 echo '修改wifi名称'
 sed -i 's/OpenWrt/newifi3/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
@@ -39,8 +41,8 @@ echo 'JD script'
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus ../diy/luci-app-jd-dailybonus
 
 echo '下载AdGuard Home'
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ../diy/luci-app-adguardhome
-svn co https://github.com/Lienol/openwrt/trunk/package/diy/adguardhome ../diy/luci-app-adguardhome
+svn co https://github.com/Lienol/openwrt/trunk/package/diy/luci-app-adguardhome ../diy/luci-app-adguardhome 
+svn co https://github.com/kenzok8/openwrt-packages/trunk/AdGuardHome ../diy/AdGuardHome
 
 echo '集成diy目录'
 ln -s ../../diy ./package/openwrt-packages
